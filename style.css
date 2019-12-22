@@ -25,14 +25,14 @@ body {
   
 }
 
+.key {
+  cursor: pointer;
+}
+
 .piano {
   display: flex;
 }
 
-.keys {
-  
-  
-}
 
 .white {
   width: 100px;
@@ -43,7 +43,9 @@ body {
 }
 
 .white:hover {
-  box-shadow: 3px 2px;
+  box-shadow: 3px 2px black;
+  
+
 }
 
 .black {
@@ -56,6 +58,17 @@ body {
   z-index: 2;
 }
 
+/* Box shadow on key when pressed */
 .white:active {
-  box-shadow: 1px 1px;
+  box-shadow: 1px 1px black;
+}
+
+
+/* Controls the color of the key wehn pressed */
+.white:active {
+  background: rgba(204, 204, 204, 0.788);
+}
+
+.black:active {
+  background: rgb(204, 204, 204);
 }
